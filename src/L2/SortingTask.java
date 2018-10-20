@@ -36,6 +36,9 @@ public class SortingTask extends Task {
 
     @Override
     public void execute() {
+        //TODO change this to define a strategy sorter
+        //you will define an enum containing bubble sort and merge sort
+        //add this as a dependency or parameter to this class and decide based on the strategy which sorting method will be called
         Vector<Double> bubbleSorted = DoubleVectorSorter.bubblesort(this.numbers);
         System.out.println(bubbleSorted.toString());
         Vector<Double> mergeSorted = DoubleVectorSorter.mergeSort(this.numbers);
