@@ -9,6 +9,7 @@ final class TaskContainerFactory {
         throw new RuntimeException("Instantiating a final class? I don't think so.");
     }
 
+    //TODO here you should implement the singleton pattern
     static Container createContainer(String strategy, ArrayList<Task> tasks) {
         Container cont;
 
